@@ -1,0 +1,176 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f9fafb;
+  background-color: #020617;
+}
+
+body {
+  margin: 0;
+}
+
+/* FULL PAGE + CARD CENTERING */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+  background: radial-gradient(circle at top left, #111827 0, #020617 55%);
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 16px;
+  padding: 24px 28px 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* HEADER ROW (TITLE + LOGOUT) */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0 0 18px;
+  font-size: 28px;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* LOGIN / SIGNUP CARD VARIANT */
+.auth-card {
+  max-width: 400px;
+  text-align: center;
+}
+
+/* AUTH INPUTS */
+.auth-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #020617;
+  color: white;
+  font-size: 14px;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-radius: 999px;
+  border: none;
+  background: #0ea5e9;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.switch-text {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.switch-link {
+  color: #38bdf8;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* INPUT + BUTTON FOR SENTIMENT */
+.text-input {
+  width: 100%;
+  resize: vertical;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #020617;
+  color: #f9fafb;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.analyze-btn {
+  display: block;
+  margin: 4px auto 16px auto;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: none;
+  background: #0ea5e9;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RESULT BOX */
+.result-box {
+  margin-bottom: 18px;
+}
+
+.sentiment-badge {
+  font-weight: 600;
+}
+
+/* ERROR / INFO */
+.error-text {
+  margin: 4px 0 10px;
+  color: #f97373;
+  font-size: 14px;
+}
+
+.muted-text {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* CHART + STATS */
+.subtitle {
+  font-size: 20px;
+  margin: 16px 0 8px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* TABLE */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.history-table th,
+.history-table td {
+  padding: 8px 10px;
+}
+
+.history-table thead tr {
+  background: #020617;
+}
+
+.history-table tbody tr:nth-child(even) {
+  background: rgba(15, 23, 42, 0.9);
+}
